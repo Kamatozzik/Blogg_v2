@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogg</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Hello. That is new version of good old Blogg.</h1>
+    </div>
+        <div class="content-box">
+            <div class="posts">
+                {% for post in posts %}
+                    <h1><a href="#">{{ post.title }}</a></h1>
+                    <p>{{ post.text }}</p>
+                    <p>Опубликовано: {{ post.pubDate }}  /  Автор: {{ post.author }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
