@@ -1,0 +1,36 @@
+
+ body {
+    background-color: #ece7ff;
+}
+
+.posts a {
+    text-decoration: none;
+}
+
+.header {
+    text-align: center;
+    background-color: #d1d1e0;
+    padding-top: 30px;
+    height: 150px;
+    min-width: 1300px;
+    border-bottom: 1px solid #e64d00;
+}
+
+.content-box {
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+    padding: 20px 20px 20px 50px;
+    width: 60%;
+    border-radius: 60px;
+    border: 1px solid #330bff;
+}
+
+.posts h1 {
+
+}
+
+.posts h2 {
+    font-size: 14px;
+}

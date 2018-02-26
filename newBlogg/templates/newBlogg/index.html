@@ -1,6 +1,11 @@
+ {% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/newBlogg.css' %}">
     <meta charset="UTF-8">
     <title>Blogg</title>
 </head>
@@ -12,8 +17,8 @@
             <div class="posts">
                 {% for post in posts %}
                     <h1><a href="#">{{ post.title }}</a></h1>
-                    <p>{{ post.text }}</p>
-                    <p>Опубликовано: {{ post.pubDate }}  /  Автор: {{ post.author }}</p>
+                    <h3>{{ post.text }}</h3>
+                    <h2>Опубликовано: {{ post.pubDate }}. Автор: {{ post.author }}</h2>
                 {% endfor %}
             </div>
         </div>
