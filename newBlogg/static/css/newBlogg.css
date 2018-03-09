@@ -43,7 +43,8 @@ body {
     min-width: 1300px;
     background-color: #2F4F4F;
     padding-top: 35px;
-
+    position: inherit;
+    margin-top: 350px;
 }
 
 .footer_txt {
