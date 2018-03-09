@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
- body {
-    background-color: #ece7ff;
+body {
+    background-color: #edeef0
 }
 
 .posts a {
@@ -9,22 +10,24 @@
 
 .header {
     text-align: center;
-    background-color: #d1d1e0;
+    background-color: rgba(10, 243, 255, 0.4);
     padding-top: 30px;
     height: 150px;
     min-width: 1300px;
-    border-bottom: 1px solid blue;
+   /* border-bottom: 4px solid;
+    border-color: -o-highlight-border; */
+
 }
 
 .content-box {
     margin-left: 20%;
+    margin-bottom: 50px;
     margin-top: 50px;
-    margin-bottom: 100px;
     background-color: white;
     padding: 20px 20px 20px 50px;
     width: 60%;
-    border-radius: 60px;
-    border: 1px solid #330bff;
+    border-radius: 5px;
+    border: 1px solid #d7d8db;
 }
 
 .posts h1 {
@@ -33,4 +36,20 @@
 
 .posts h2 {
     font-size: 14px;
+}
+
+.footer {
+    height: 150px;
+    min-width: 1300px;
+    background-color: #2F4F4F;
+    padding-top: 35px;
+
+}
+
+.footer_txt {
+    position: inherit;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 20px;
 }

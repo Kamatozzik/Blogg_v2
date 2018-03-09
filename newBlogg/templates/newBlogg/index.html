@@ -9,17 +9,23 @@
     <meta charset="UTF-8">
     <title>Blogg</title>
 </head>
-<body>
-    <div class="header">
-        <h1>Hello. That is new version of good old Blogg.</h1>
-    </div>
-        <div class="content-box">
-            <div class="posts">
-                {% for post in posts %}
+    <body>
+        <div class="header">
+            <h1>Hello. That is new version of good old Blogg.</h1>
+        </div>
+        {% for post in posts %}
+            <div class="content-box">
+                <div class="posts">
                     <h1><a href="#">{{ post.title }}</a></h1>
                     <h3>{{ post.text }}</h3>
                     <h2>Опубликовано: {{ post.pubDate }}. Автор: {{ post.author }}</h2>
-                {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+        <div class="footer">
+            <div class="footer_txt">
+                <p>Production by <a href="https://vk.com/fucking.crazy.unicorn88">Alexey Chaban</a></p>
+                <p>All rights reserved.</p>
             </div>
         </div>
     </body>
