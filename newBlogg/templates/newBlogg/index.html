@@ -11,8 +11,15 @@
 </head>
     <body>
     <div class="header">
-        <h1>Hello. That is new version of good old Blogg.</h1>
+        <a href="{% url 'post_list' %}">Vblogge</a>
     </div>
+
+    <div class="link-container">
+        <div class="link">
+            <a href="{% url 'post_new' %}" class="b1">Добавить новый пост</a>
+        </div>
+    </div>
+
     {% block content %}
 
     {% endblock %}
