@@ -1,7 +1,14 @@
 {% extends 'newBlogg/index.html' %}
+{% load staticfiles %}
 
 {% block content %}
-        {% for post in posts %}
+    <link rel="stylesheet" href="{% static 'css/newBlogg.css' %}">
+    <div class="link-container">
+        <div class="link">
+            <a href="{% url 'post_new' %}" class="top-menu">Добавить новый пост</a>
+        </div>
+    </div>
+    {% for post in posts %}
             <div class="content-box">
                 <div class="posts">
                     <h1><a href="{% url 'post_info' pk=post.pk %}">{{ post.title }}</a></h1>
@@ -10,4 +17,9 @@
                 </div>
             </div>
         {% endfor %}
+    <div class="footer">
+            <div class="footer_txt">
+                <p>Production by <a href="https://vk.com/fucking.crazy.unicorn88">Alexey Chaban &#169.</a></p>
+                <p>All rights reserved.</p>
+            </div>
 {% endblock %}

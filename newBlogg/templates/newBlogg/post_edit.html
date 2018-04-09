@@ -1,6 +1,8 @@
 {% extends 'newBlogg/index.html' %}
+{% load staticfiles %}
 
 {% block content %}
+  <link rel="stylesheet" href='{% static 'css/newBlogg.css' %}'>
     <h1>New post</h1>
         <form method="POST" class="post-form">{% csrf_token %}
             {{ form.as_p }}
