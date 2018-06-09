@@ -1,11 +1,11 @@
-from django.contrib.auth import authenticate, login
-
 from .models import PostConstructor
 from django.shortcuts import get_object_or_404, render
 from .forms import PostForm
 from django.utils import timezone
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login
+
 
 
 def post_list(request):
@@ -30,7 +30,7 @@ def post_new(request):
             return redirect('post_info', pk=post.pk)
     else:
         form = PostForm()
-    return render(request, 'newBlogg/post_edit.html', {'form': form})
+    return render(request, 'newBlogg/post_new.html', {'form': form})
 
 
 def post_edit(request, pk):
@@ -61,3 +61,22 @@ def sign_in(request):
     else:
         form = UserCreationForm()
     return render(request, 'newBlogg/registration_template.html', {'form': form})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
