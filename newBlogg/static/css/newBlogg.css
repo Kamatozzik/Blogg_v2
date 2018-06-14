@@ -35,6 +35,11 @@ body {
     text-align: center;
     border-radius: 5px;
     border: 1px solid #d7d8db;
+    transition: all .5s;
+}
+
+.link-container:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,.2)
 }
 
 .link-container a {
